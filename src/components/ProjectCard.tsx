@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Project } from '@/lib/projects';
 import { Badge } from '@/components/ui/badge';
@@ -7,11 +6,15 @@ import { Button } from '@/components/ui/button';
 interface ProjectCardProps {
   project: Project;
   className?: string;
+  style?: React.CSSProperties;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, className }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ project, className, style }) => {
   return (
-    <div className={`glass-card rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px] ${className}`}>
+    <div 
+      className={`glass-card rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px] ${className}`}
+      style={style}
+    >
       <div className="relative aspect-video bg-gradient-to-br from-primary/30 to-secondary">
         <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl p-4">
           {project.title}
