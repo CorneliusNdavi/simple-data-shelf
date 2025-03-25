@@ -10,40 +10,50 @@ export interface Project {
   date: string;
 }
 
-// Initial projects data
+// Projects data
 export const projectsData: Project[] = [
   {
     id: "1",
-    title: "Predictive Analysis of Customer Behavior",
-    description: "Developed a machine learning model to predict customer purchase behavior based on historical transaction data. Used Python, Pandas, and Scikit-learn to build and validate the model.",
-    tags: ["Python", "Machine Learning", "Pandas", "Scikit-learn"],
-    githubUrl: "https://github.com/corneliusndavi/customer-prediction",
-    date: "2023-05-01"
+    title: "Customer Churn Prediction Model",
+    description: "Developed a machine learning model to predict customer churn for a telecom company. Achieved 89% accuracy using Random Forest and XGBoost algorithms.",
+    tags: ["Python", "Machine Learning", "Pandas", "Scikit-learn", "XGBoost"],
+    githubUrl: "https://github.com/corneliusndavi/churn-prediction",
+    liveUrl: "https://churn-prediction-demo.herokuapp.com",
+    date: "2023-08-15"
   },
   {
     id: "2",
     title: "COVID-19 Data Visualization Dashboard",
-    description: "Created an interactive dashboard to visualize COVID-19 data across different regions. Implemented using Python, Plotly, and Dash to provide real-time insights.",
+    description: "Created an interactive dashboard to visualize COVID-19 trends across African countries. Used Python, Dash, and Plotly to visualize infection rates, recovery, and vaccination data.",
     tags: ["Python", "Data Visualization", "Plotly", "Dash"],
-    githubUrl: "https://github.com/corneliusndavi/covid-dashboard",
-    liveUrl: "https://covid-dashboard.example.com",
-    date: "2023-02-15"
+    githubUrl: "https://github.com/corneliusndavi/covid-africa-dashboard",
+    liveUrl: "https://covid-africa-dashboard.herokuapp.com",
+    date: "2023-05-20"
   },
   {
     id: "3",
-    title: "Natural Language Processing for Sentiment Analysis",
-    description: "Built a sentiment analysis tool to analyze customer reviews and feedback. Utilized NLTK and TensorFlow to create a deep learning model for accurate sentiment classification.",
-    tags: ["Python", "NLP", "TensorFlow", "NLTK"],
+    title: "Sentiment Analysis for Product Reviews",
+    description: "Built an NLP pipeline to analyze customer sentiment in product reviews. Implemented advanced text preprocessing and BERT model fine-tuning to achieve 92% classification accuracy.",
+    tags: ["Python", "NLP", "TensorFlow", "BERT", "Hugging Face"],
     githubUrl: "https://github.com/corneliusndavi/sentiment-analysis",
-    date: "2022-11-20"
+    date: "2023-02-10"
   },
   {
     id: "4",
-    title: "Stock Market Price Prediction",
-    description: "Developed a time series forecasting model to predict stock market prices. Used ARIMA, LSTM, and other statistical methods to improve prediction accuracy.",
-    tags: ["Python", "Time Series Analysis", "LSTM", "Financial Data"],
-    githubUrl: "https://github.com/corneliusndavi/stock-prediction",
-    date: "2022-08-10"
+    title: "Nairobi Housing Price Predictor",
+    description: "Developed a regression model to predict housing prices in Nairobi based on location, size, amenities, and other features. Created a web app for real-time predictions.",
+    tags: ["Python", "Regression", "Flask", "GeoPandas", "Scikit-learn"],
+    githubUrl: "https://github.com/corneliusndavi/nairobi-housing",
+    liveUrl: "https://nairobi-housing-predictor.herokuapp.com",
+    date: "2022-11-05"
+  },
+  {
+    id: "5",
+    title: "Agricultural Crop Yield Forecasting",
+    description: "Created a time series forecasting model to predict crop yields based on historical data and weather patterns. Implemented ARIMA, LSTM, and Prophet models for comparison.",
+    tags: ["Python", "Time Series", "LSTM", "Prophet", "Agricultural Data"],
+    githubUrl: "https://github.com/corneliusndavi/crop-yield-forecast",
+    date: "2022-07-22"
   }
 ];
 

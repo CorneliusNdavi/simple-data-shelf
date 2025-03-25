@@ -94,8 +94,8 @@ const Contact = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-medium">Email</h4>
-                  <a href="mailto:contact@corneliusndavi.com" className="text-sm text-muted-foreground hover:text-primary">
-                    contact@corneliusndavi.com
+                  <a href="mailto:cornelius.ndavi@gmail.com" className="text-sm text-muted-foreground hover:text-primary">
+                    cornelius.ndavi@gmail.com
                   </a>
                 </div>
               </div>
@@ -109,7 +109,7 @@ const Contact = () => {
                 <div className="ml-4">
                   <h4 className="font-medium">Phone</h4>
                   <a href="tel:+1234567890" className="text-sm text-muted-foreground hover:text-primary">
-                    +1 (234) 567-890
+                    +254 712 345 678
                   </a>
                 </div>
               </div>
@@ -124,7 +124,7 @@ const Contact = () => {
                 <div className="ml-4">
                   <h4 className="font-medium">Location</h4>
                   <span className="text-sm text-muted-foreground">
-                    San Francisco, California
+                    Nairobi, Kenya
                   </span>
                 </div>
               </div>
@@ -134,7 +134,7 @@ const Contact = () => {
               <h4 className="font-semibold mb-4">Connect With Me</h4>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/corneliusndavi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-foreground/5 flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-colors"
@@ -145,7 +145,7 @@ const Contact = () => {
                 </a>
                 
                 <a
-                  href="https://linkedin.com/"
+                  href="https://linkedin.com/in/corneliusndavi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-foreground/5 flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-colors"
@@ -158,7 +158,7 @@ const Contact = () => {
                 </a>
                 
                 <a
-                  href="https://twitter.com/"
+                  href="https://twitter.com/corneliusndavi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-foreground/5 flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-colors"
