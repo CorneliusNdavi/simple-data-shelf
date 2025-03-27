@@ -1,7 +1,10 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import { Project } from '@/lib/projects';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Code } from 'lucide-react';
 
 interface ProjectCardProps {
   project: Project;
@@ -10,14 +13,25 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, className, style }) => {
+  const [showCode, setShowCode] = useState(false);
+
   return (
     <div 
       className={`glass-card rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:translate-y-[-5px] ${className}`}
       style={style}
     >
-      <div className="relative aspect-video bg-gradient-to-br from-primary/30 to-secondary">
-        <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-xl p-4">
-          {project.title}
+      <div className="relative aspect-video overflow-hidden">
+        {project.image ? (
+          <img 
+            src={project.image} 
+            alt={project.title} 
+            className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+          />
+        ) : (
+          <div className="bg-gradient-to-br from-primary/30 to-secondary w-full h-full"></div>
+        )}
+        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+          <h3 className="text-white font-bold text-xl p-4 text-center">{project.title}</h3>
         </div>
       </div>
       
@@ -33,6 +47,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, className, style }) 
         <p className="text-muted-foreground mb-6">
           {project.description}
         </p>
+        
+        {project.codeSnippet && (
+          <div className="mb-6">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="mb-2 w-full flex items-center justify-center gap-2"
+              onClick={() => setShowCode(!showCode)}
+            >
+              <Code size={16} />
+              {showCode ? 'Hide Code Snippet' : 'View Code Snippet'}
+            </Button>
+            
+            {showCode && (
+              <Card className="bg-slate-950 text-slate-50 overflow-x-auto">
+                <CardContent className="p-4">
+                  <pre className="text-xs md:text-sm">
+                    <code>{project.codeSnippet}</code>
+                  </pre>
+                </CardContent>
+              </Card>
+            )}
+          </div>
+        )}
         
         <div className="flex flex-wrap gap-3 justify-between items-center">
           <div className="text-sm text-muted-foreground">
