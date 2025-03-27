@@ -19,7 +19,7 @@ export const projectsData: Project[] = [
     description: "Developed a machine learning model to predict customer churn for a telecom company. Achieved 89% accuracy using Random Forest and XGBoost algorithms.",
     image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
     tags: ["Python", "Machine Learning", "Pandas", "Scikit-learn", "XGBoost"],
-    githubUrl: "https://github.com/corneliusndavi/churn-prediction",
+    githubUrl: "https://github.com/your-username/churn-prediction",
     liveUrl: "https://churn-prediction-demo.herokuapp.com",
     date: "2024-11-15",
     codeSnippet: `import pandas as pd
@@ -51,7 +51,7 @@ def train_model(X_train, y_train):
     description: "Created an interactive dashboard to visualize COVID-19 trends across African countries. Used Python, Dash, and Plotly to visualize infection rates, recovery, and vaccination data.",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
     tags: ["Python", "Data Visualization", "Plotly", "Dash"],
-    githubUrl: "https://github.com/corneliusndavi/covid-africa-dashboard",
+    githubUrl: "https://github.com/your-username/covid-africa-dashboard",
     liveUrl: "https://covid-africa-dashboard.herokuapp.com",
     date: "2024-12-05",
     codeSnippet: `import dash
@@ -91,7 +91,8 @@ app.layout = html.Div([
     description: "Built an NLP pipeline to analyze customer sentiment in product reviews. Implemented advanced text preprocessing and BERT model fine-tuning to achieve 92% classification accuracy.",
     image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
     tags: ["Python", "NLP", "TensorFlow", "BERT", "Hugging Face"],
-    githubUrl: "https://github.com/corneliusndavi/sentiment-analysis",
+    githubUrl: "https://github.com/your-username/sentiment-analysis",
+    liveUrl: "https://sentiment-analysis-demo.herokuapp.com",
     date: "2024-12-28",
     codeSnippet: `import torch
 from transformers import BertTokenizer, BertForSequenceClassification
@@ -131,7 +132,7 @@ def train_sentiment_model(train_dataloader, device):
     description: "Developed a regression model to predict housing prices in Nairobi based on location, size, amenities, and other features. Created a web app for real-time predictions.",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     tags: ["Python", "Regression", "Flask", "GeoPandas", "Scikit-learn"],
-    githubUrl: "https://github.com/corneliusndavi/nairobi-housing",
+    githubUrl: "https://github.com/your-username/nairobi-housing",
     liveUrl: "https://nairobi-housing-predictor.herokuapp.com",
     date: "2025-02-10",
     codeSnippet: `from flask import Flask, request, jsonify, render_template
@@ -179,7 +180,8 @@ def predict():
     description: "Created a time series forecasting model to predict crop yields based on historical data and weather patterns. Implemented ARIMA, LSTM, and Prophet models for comparison.",
     image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
     tags: ["Python", "Time Series", "LSTM", "Prophet", "Agricultural Data"],
-    githubUrl: "https://github.com/corneliusndavi/crop-yield-forecast",
+    githubUrl: "https://github.com/your-username/crop-yield-forecast",
+    liveUrl: "https://crop-yield-forecast.herokuapp.com",
     date: "2025-03-15",
     codeSnippet: `import pandas as pd
 import numpy as np
