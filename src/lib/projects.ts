@@ -19,7 +19,7 @@ export const projectsData: Project[] = [
     tags: ["Python", "Machine Learning", "Pandas", "Scikit-learn", "XGBoost"],
     githubUrl: "https://github.com/corneliusndavi/churn-prediction",
     liveUrl: "https://churn-prediction-demo.herokuapp.com",
-    date: "2024-10-15"
+    date: "2024-11-15"
   },
   {
     id: "2",
@@ -28,7 +28,7 @@ export const projectsData: Project[] = [
     tags: ["Python", "Data Visualization", "Plotly", "Dash"],
     githubUrl: "https://github.com/corneliusndavi/covid-africa-dashboard",
     liveUrl: "https://covid-africa-dashboard.herokuapp.com",
-    date: "2024-11-20"
+    date: "2024-12-05"
   },
   {
     id: "3",
@@ -36,7 +36,7 @@ export const projectsData: Project[] = [
     description: "Built an NLP pipeline to analyze customer sentiment in product reviews. Implemented advanced text preprocessing and BERT model fine-tuning to achieve 92% classification accuracy.",
     tags: ["Python", "NLP", "TensorFlow", "BERT", "Hugging Face"],
     githubUrl: "https://github.com/corneliusndavi/sentiment-analysis",
-    date: "2024-12-10"
+    date: "2024-12-28"
   },
   {
     id: "4",
@@ -45,7 +45,7 @@ export const projectsData: Project[] = [
     tags: ["Python", "Regression", "Flask", "GeoPandas", "Scikit-learn"],
     githubUrl: "https://github.com/corneliusndavi/nairobi-housing",
     liveUrl: "https://nairobi-housing-predictor.herokuapp.com",
-    date: "2025-01-05"
+    date: "2025-02-10"
   },
   {
     id: "5",
@@ -53,7 +53,7 @@ export const projectsData: Project[] = [
     description: "Created a time series forecasting model to predict crop yields based on historical data and weather patterns. Implemented ARIMA, LSTM, and Prophet models for comparison.",
     tags: ["Python", "Time Series", "LSTM", "Prophet", "Agricultural Data"],
     githubUrl: "https://github.com/corneliusndavi/crop-yield-forecast",
-    date: "2025-01-22"
+    date: "2025-03-15"
   }
 ];
 
