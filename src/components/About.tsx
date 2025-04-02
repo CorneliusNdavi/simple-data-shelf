@@ -41,9 +41,9 @@ const About = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 order-2 lg:order-1">
-            <h3 className="text-2xl font-bold">Data Science Student & Analyst</h3>
+            <h3 className="text-2xl font-bold">Data Scientist & Analyst</h3>
             <p className="text-muted-foreground">
-              I'm Cornelius Ndavi, a passionate data science student with a strong foundation in statistical analysis and machine learning. My journey in data science began with a curiosity about how data can be used to solve complex problems and drive decision-making.
+              I'm Cornelius Ndavi, a passionate data scientist with a strong foundation in statistical analysis and machine learning. My journey in data science began with a curiosity about how data can be used to solve complex problems and drive decision-making.
             </p>
             <p className="text-muted-foreground">
               I specialize in data analysis, visualization, and building predictive models. My goal is to extract meaningful insights from data and communicate them effectively to stakeholders.
@@ -57,7 +57,7 @@ const About = () => {
               
               <div className="glass-card p-4 rounded-lg">
                 <h4 className="font-semibold mb-2">Experience</h4>
-                <p className="text-sm text-muted-foreground">2+ years working with data</p>
+                <p className="text-sm text-muted-foreground">1+ year working with data</p>
               </div>
             </div>
             

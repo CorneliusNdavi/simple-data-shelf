@@ -35,7 +35,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium animate-fade-in">
-              Data Science Student
+              Data Scientist and Analyst
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight animate-fade-up" style={{ animationDelay: '0.2s' }}>
               Hello, I'm<br />
