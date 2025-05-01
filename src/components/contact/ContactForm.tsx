@@ -39,7 +39,7 @@ const ContactForm = () => {
     };
     
     emailjs.send(
-      'service_id',           // Replace with your EmailJS Service ID
+      'service_iu3cr5g',      // Updated with your EmailJS Service ID
       'template_id',          // Replace with your EmailJS Template ID
       templateParams,
       'user_id'               // Replace with your EmailJS User ID
