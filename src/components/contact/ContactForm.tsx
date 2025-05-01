@@ -40,9 +40,9 @@ const ContactForm = () => {
     
     emailjs.send(
       'service_iu3cr5g',      // Updated with your EmailJS Service ID
-      'template_id',          // Replace with your EmailJS Template ID
+      'template_5p5f1ha',     // Updated with your EmailJS Template ID
       templateParams,
-      'user_id'               // Replace with your EmailJS User ID
+      'e3p2NhzxCSwUDZLIj'     // Updated with your EmailJS Public Key
     )
     .then(() => {
       toast({
