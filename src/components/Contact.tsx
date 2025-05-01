@@ -1,8 +1,10 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/components/ui/use-toast";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const contactRef = useRef<HTMLDivElement>(null);
@@ -47,8 +49,22 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    // EmailJS service configuration
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
+    
+    // Replace these with your actual EmailJS Service ID, Template ID, and User ID
+    emailjs.send(
+      'service_id',           // Replace with your EmailJS Service ID
+      'template_id',          // Replace with your EmailJS Template ID
+      templateParams,
+      'user_id'               // Replace with your EmailJS User ID
+    )
+    .then(() => {
       toast({
         title: "Message sent!",
         description: "Thank you for your message. I'll get back to you soon.",
@@ -61,8 +77,19 @@ const Contact = () => {
         message: ''
       });
       
+      console.log("Email sent successfully!");
+    })
+    .catch((error) => {
+      console.error("Email error:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again later.",
+        variant: "destructive",
+      });
+    })
+    .finally(() => {
       setIsSubmitting(false);
-    }, 1500);
+    });
   };
 
   return (
